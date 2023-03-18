@@ -122,9 +122,11 @@ img {
     background-image: var(--grad), url(../images/hero-bg.jpeg); 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     padding-top: 188px ;
     padding-bottom: 188px;
+    margin: 0 auto;
+    width: 1440px;
 }
 
 .hero-title {
