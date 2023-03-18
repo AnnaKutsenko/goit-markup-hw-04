@@ -1,6 +1,6 @@
 
 :root {
---grad: linear-gradient (rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    --grad: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 p,
@@ -120,7 +120,7 @@ img {
         /***---------------ЗАТЕМНЕННЯ хиро------------------------------------***/
 .hero {
     background-color: #2E2F42;
-    background-image: url(../images/hero-bg.jpeg); 
+    background-image: var(--grad), url(../images/hero-bg.jpeg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -213,7 +213,6 @@ img {
     margin-bottom: 72px;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .gal-btn {
@@ -224,7 +223,6 @@ img {
     letter-spacing: 0.04em;
     color: #4D5AE5;
     background: #F4F4FD;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     padding: 12px 24px;
     border-radius: 4px;
@@ -251,11 +249,22 @@ img {
     row-gap: 48px;
 }
 
+.gal-list:hover, :focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+
 .gal-item {
     width: calc((100% - 48px) / 3); 
     box-sizing: border-box
     border: 1px solid #E7E9FC
 }
+
+.gal-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+0px 1px 1px rgba(46, 47, 66, 0.16),
+0px 2px 1px rgba(46, 47, 66, 0.08)
+}
+
 
 .gal {
     width: 360px;
@@ -335,7 +344,7 @@ img {
     justify-content: center;
 }
 
-.section-soc-link:hover {
+.section-soc-link:hover, :focus {
     background-color: #404BBF;
 }
 /**----------CUSTOMER---------**/
@@ -361,7 +370,10 @@ img {
     justify-content: center;
     margin-top: 72px;
 }
-.cust-item {
+
+.cust-item {}
+
+.cust-link {
     width: 168px;
     height: 88px;
     border: 1px solid #8E8F99;
@@ -371,16 +383,15 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    fill: #8E8F99
 }
 
-.cust-item:hover {
-    border: 1px solid #404BBF; 
+.cust-link:hover, :focus {
+    border: 1px solid #404BBF;
     fill: #404BBF
-
 }
-
 .cust-icon {
-    fill: #404BBF;
+
 }
 /**---------FOOTER---------**/
 
@@ -436,16 +447,15 @@ img {
     padding: 12px;
     align-items: center;
     justify-content: center;
-    background: grey;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-link:hover{
-    background-color:green;
+    background-color:#31D0AA;
+}   
+
+.footer-icon {
+    fill: #FFFFFF
 }
 
 </***--->
-    .shadow {
-        box-shadow: box-shadow: 0px 4px 4px 0px #00000040;
-    }
-<//***--->
-/**----------------------------**/
