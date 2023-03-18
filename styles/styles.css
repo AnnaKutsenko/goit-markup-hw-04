@@ -95,7 +95,7 @@ img {
 
 .header-link:hover,
 .header-link:focus {
-    color: #404bbf
+    color: #404bbf;
 }
 
 .header-address {
@@ -250,7 +250,8 @@ img {
     row-gap: 48px;
 }
 
-.gal-list:hover, :focus {
+.gal-list:hover, 
+.gal-list:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08)
 }
 
@@ -345,7 +346,8 @@ img {
     justify-content: center;
 }
 
-.section-soc-link:hover, :focus {
+.section-soc-link:hover, 
+.section-soc-link:focus {
     background-color: #404BBF;
 }
 /**----------CUSTOMER---------**/
@@ -387,7 +389,8 @@ img {
     fill: #8E8F99
 }
 
-.cust-link:hover, :focus {
+.cust-link:hover, 
+.cust-link:focus {
     border: 1px solid #404BBF;
     fill: #404BBF
 }
