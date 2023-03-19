@@ -118,8 +118,8 @@ img {
     color: #404bbf
 }
 
-/**------------HERO-----------**/
-        /***---------------ЗАТЕМНЕННЯ хиро------------------------------------***/
+/**---------------HERO--------------**/
+
 .hero {
     background-color: #2E2F42;
     background-image: var(--grad), url(../images/hero-bg.jpeg); 
@@ -211,6 +211,7 @@ img {
     width: 264px;
 }
 /**---------------GALLERY---------------**/
+
 .gal-list-btn {
     display: flex;
     gap: 24px;
@@ -246,6 +247,7 @@ img {
 }
 
 /**------------------GALLERY PICTURE------------------**/
+
 .gal-list {
     display: flex;
     flex-wrap: wrap;
@@ -352,7 +354,9 @@ img {
 .section-soc-link:focus {
     background-color: #404BBF;
 }
-/**----------CUSTOMER---------**/
+
+/**-------------CUSTOMER------------**/
+
 .customers{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -396,6 +400,7 @@ img {
     border: 1px solid #404BBF;
     fill: #404BBF
 }
+
 .cust-icon {
 
 }
@@ -427,6 +432,7 @@ img {
     weight: 800px;
     color: #F4F4FD
 }
+
 .footer-container {
     display: flex;
 }
@@ -434,9 +440,11 @@ img {
 .footer-logo-container {
     margin-right: 120px;
 }
+
 .footer-soc-container {
     display: block
 }
+
 .footer-soc-list {
     display: flex;
     gap: 16px;
@@ -466,5 +474,3 @@ img {
 .footer-icon {
     fill: #FFFFFF
 }
-
-</***--->
